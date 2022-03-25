@@ -1,0 +1,152 @@
+:root {
+    --prim: rgb(184, 103, 11);
+    --sec: #7e7e7e;
+    --tert: olive;
+    --textColor: #eaeae3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.home {
+    background-image: url("../css/media/hall_of_presidents.jpg");
+    background-position: center;
+    background-position-y: 2rem;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+}
+
+.single {
+    background-image: url("../css/media/hall_of_presidents.jpg");
+    background-position: center;
+    background-position-y: 5rem;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #494d6a;
+}
+
+
+a {
+    color: var(--sec);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--tert);
+}
+
+/* header */
+.header {
+    padding: 5px;
+}
+
+.h1 {
+    padding-bottom: 5px;
+    color: var(--prim);
+    font-size: calc(36px + (52 - 36) * ((100vw - 300px) / (1600 - 300) ));
+    text-transform: uppercase;
+}
+
+.top-nav {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    width: 25%;
+}
+
+.top-nav a {
+    margin: 10px 0;
+    color: var(--sec);
+    text-decoration: none;
+    transition: color 0.75s ease;
+}
+
+.top-nav a:hover {
+    color: var(--tert);
+}
+
+/* home */
+.portrait-col {
+    position: relative;
+}
+
+.portrait-header-row {
+    position: relative;
+}
+
+.home-header {
+    /* margin-top: 80px; */
+    color: var(--sec);
+    text-transform: capitalize;
+}
+
+.home-image {
+    /* display: block; */
+    position: fixed;
+    top: 280px;
+    margin: 0 0 0 25px;
+    /* margin-top: 250px; */
+    /* padding: 80px 10px; */
+    width: 30%;
+    height: auto;
+    /* max-height: 1000px; */
+    border-radius: 50%;
+    /* box-shadow: 2px 2px 2px #ddd; */
+    /* justify-content: space-around; */
+}
+
+.portrait-header {
+    position: absolute;
+    bottom: 0;
+}
+
+.figure-president {
+    margin-bottom: 40px;
+}
+
+.president-image {
+    border-radius: 50%;
+    /* box-shadow: 2px 2px 2px #ddd; */
+}
+
+.figcap-president {
+    font-size: 32px;
+    color: var(--textColor);
+}
+
+.figcap-term {
+    font-size: 28px;
+    color: var(--textColor);
+}
+
+.img-single {
+    min-width: 300px;
+    border-radius: 50%;
+    
+}
+
+.figure-single {
+    margin-top: 300px;
+    /* background-color: #eaeae3; */
+
+}
+
+.figcap-single {
+    color: var(--textColor);
+}
+
+.top-link {
+    position: fixed;
+    bottom: 20px;
+}
+
+.colophon {
+    position: fixed;
+    bottom: 10px;
+}

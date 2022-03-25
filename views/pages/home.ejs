@@ -1,0 +1,17 @@
+<%- include('../partials/header'); %>
+   
+<main class="main main-home container-fluid">
+    <div class="row portrait-row justify-content-center">
+        <div class="portrait-col col-md-4">
+            <!-- <h2 class="home-header text-center">welcome to my hall of presidents</h2> -->
+            <% let i = Math.floor(Math.random() * data.length) %>
+            <img src="<%= data[i].photo %>"  alt="<%= data[i].name %>" class="img-fluid home-image">
+        </div>
+        <div class="row portrait-header-row justify-content-center"></div>
+            <h2 class="portrait-header text-center"><%= data[i].name %></h2>
+        </div>
+
+    </div> 
+</main>
+
+<%- include('../partials/footer'); %>
