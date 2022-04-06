@@ -3,26 +3,17 @@
     --sec: #7e7e7e;
     --tert: olive;
     --textColor: #eaeae3;
+    --headerFont: 'Luxurious Script';
+    --textFont: 'Tangerine';
+    /* --headerFont: 'Tangerine'; */
+    /* font-family: 'Luxurious Script', cursive;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Tangerine', cursive; */
 }
 
 * {
     box-sizing: border-box;
-}
-
-.home {
-    background-image: url("../css/media/hall_of_presidents.jpg");
-    background-position: center;
-    background-position-y: 2rem;
-    background-repeat: no-repeat;
-    /* background-size: auto; */
-}
-
-.single {
-    background-image: url("../css/media/hall_of_presidents.jpg");
-    background-position: center;
-    background-position-y: 5rem;
-    background-repeat: no-repeat;
-    /* background-size: auto; */
 }
 
 body {
@@ -31,9 +22,22 @@ body {
     background: #494d6a;
 }
 
+.home {
+    background-image: url("/media/hall_of_presidents.jpg");
+    background-position: center;
+    background-position-y: 2rem;
+    background-repeat: no-repeat;
+}
+
+.single {
+    background-image: url("/media/hall_of_presidents.jpg");
+    background-position: center;
+    background-position-y: 5rem;
+    background-repeat: no-repeat;
+}
 
 a {
-    color: var(--sec);
+    color: var(--textColor);
     text-decoration: none;
 }
 
@@ -48,6 +52,7 @@ a:hover {
 
 .h1 {
     padding-bottom: 5px;
+    /* font-family: var(--headerFont); */
     color: var(--prim);
     font-size: calc(36px + (52 - 36) * ((100vw - 300px) / (1600 - 300) ));
     text-transform: uppercase;
@@ -62,7 +67,7 @@ a:hover {
 
 .top-nav a {
     margin: 10px 0;
-    color: var(--sec);
+    color: var(--textColor);
     text-decoration: none;
     transition: color 0.75s ease;
 }
@@ -82,23 +87,18 @@ a:hover {
 
 .home-header {
     /* margin-top: 80px; */
+    /* font-family: var(--headerFont); */
     color: var(--sec);
     text-transform: capitalize;
 }
 
 .home-image {
-    /* display: block; */
     position: fixed;
     top: 280px;
     margin: 0 0 0 25px;
-    /* margin-top: 250px; */
-    /* padding: 80px 10px; */
     width: 30%;
     height: auto;
-    /* max-height: 1000px; */
     border-radius: 50%;
-    /* box-shadow: 2px 2px 2px #ddd; */
-    /* justify-content: space-around; */
 }
 
 .portrait-header {
@@ -112,32 +112,32 @@ a:hover {
 
 .president-image {
     border-radius: 50%;
-    /* box-shadow: 2px 2px 2px #ddd; */
 }
 
 .figcap-president {
-    font-size: 32px;
+    font-family: var(--headerFont);
+    font-size: 42px;
     color: var(--textColor);
 }
 
 .figcap-term {
-    font-size: 28px;
+    font-size: 42px;
+    font-family: var(--textFont);
     color: var(--textColor);
 }
 
 .img-single {
     min-width: 300px;
     border-radius: 50%;
-    
 }
 
 .figure-single {
     margin-top: 300px;
-    /* background-color: #eaeae3; */
-
 }
 
 .figcap-single {
+    font-size: 42px;
+    font-family: var(--textFont);
     color: var(--textColor);
 }
 

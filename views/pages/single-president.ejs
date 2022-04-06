@@ -3,23 +3,18 @@
 <%- include('../partials/header'); %>
  
 <main class="main main-single">
-    <!-- <h2 class="main-h2 text-center"><%= name %></h2> -->
     <section class="section section-single container">
- 
-    <!-- previous and next -->
-    <div class="prev-and-next  row justify-content-between">
-        <p class="prev col-md-2">
-            <% if(data.id > 1) { %>
-                <a href="/presidents/<%= data.id - 1 %> ">Previous president</a>
-          <% } %>
-        </p>
-        <p class="next col-md-2">
-            <a href="/presidents/<%= data.id + 1 %> ">Next president</a>
-        </p>
-    </div>
-
-    
-    
+        <!-- previous and next -->
+        <div class="prev-and-next  row justify-content-between">
+            <p class="prev col-md-2">
+                <% if(data.id > 1) { %>
+                    <a href="/presidents/<%= data.id - 1 %> ">Previous president</a>
+            <% } %>
+            </p>
+            <p class="next col-md-2">
+                <a href="/presidents/<%= data.id + 1 %> ">Next president</a>
+            </p>
+        </div>
         <div class="row justify-content-around">
             <figure class="figure figure-single d-block text-center col-md-6">
                 <img src="<%= data.photo %>" alt="<%= data.name %>" class="img-fluid img-single">

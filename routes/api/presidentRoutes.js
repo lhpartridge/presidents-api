@@ -10,7 +10,6 @@ fetch('https://api.sampleapis.com/presidents/presidents')
  
 //all presidents
 //localhost:3000/presidents
-//copy/paste URL from api.sampleapis.com
 router.get('/', (req, res) => {
     const URL = 'https://api.sampleapis.com/presidents/presidents'
  
@@ -53,8 +52,5 @@ router.get('/:id', (req, res) => {
             console.log('ERROR', error)
         })
 })
- 
-
-
  
 module.exports = router
